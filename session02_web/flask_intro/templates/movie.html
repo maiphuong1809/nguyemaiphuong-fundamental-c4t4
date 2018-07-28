@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Movies List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    {% for movie in movies%}
+        <h2>{{movie.title}} </h2>
+        <h4>Cast:{{movie.cast}}</h4>
+        <img src="{{movie.thumbnail_url}}" alt="">
+        <a href="http://www.phimmoi.net/phim/biet-doi-sieu-anh-hung-3-cuoc-chien-vo-cuc-3244/">Xem phim</a>
+    {% endfor %}
+</body>
+</html>

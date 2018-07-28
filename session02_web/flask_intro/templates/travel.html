@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Top 5 place to travel in Asia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Top 5 place to travel in Asia</h1>
+    {% for travel in travels %}
+    <h2>{{travel.place}}</h3>
+    <img src="{{travel.location_url}}" alt="">
+    <h5>Things to do :{{travel.things_to_do}}</h5>
+    {% endfor %}
+</body>
+</html>
